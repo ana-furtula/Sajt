@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+}
+body{
+    background-color: beige;
+}
+
+#wrap{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    
+}
+
+#w3{
+    grid-column: 1/span 3;
+    grid-row: 1/span 1;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+
+.fotorama{
+    grid-column: 1/span 3;
+    grid-row: 3/span 1;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-items: center;
+}
+
+.naslov{
+    grid-column: 1/span 3;
+    grid-row: 2/span 1;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+}
+
+
+.mapouter{
+    grid-column: 3/span 1;
+    grid-row: 4/span 1;
+    margin:20px 20px 0px 0px;
+    float: right;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 200px;
+    width: 200px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 200px;
+    width: 200px;
+
+}
+
+.tekst{
+    grid-column: 1/span 2;
+    grid-row: 4/span 1;
+    color:black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin: 20px 20px 20px 20px;
+    text-align: justify;
+ }
+
+#formID{
+    border-color: black;
+    border-width: medium;
+    border-radius: 2px;
+    border-style: solid;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.accordion>h4{
+    color: black;
+}
+.accordion h4:hover{
+    cursor: pointer;
+}
+
+#footer{
+    grid-column: 1/span 3;
+    grid-row: 5/span 1;
+    background-image: url("../slike/newsletter.jpg"); background-size: 100%;
+}
+
+.accordion{
+    text-align: center;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+
+@media only screen and (max-width: 450px){
+    .fotorama{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+  }
+
+body {
+  background-image: url("../slike/holidays/pozadinaHolidays.jpg"); 
+  background-size: 100%; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin:0
+}
+h1{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.mySlides {display: none}
+
+.central img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+#w3{
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+}
+
+.slideshow-container {
+  width: 80%;
+  height: 80%;
+  position: relative;
+  margin: auto;
+  padding: 7px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  color: black;
+  padding: 8px 12px;
+  bottom: 8px;
+  text-align: justify;
+}
+
+.caption{
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 12px;
+    top: 8px;
+    text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (min-width: 600px) {
+  .prev, .next,.text, .caption {font-size: 12px}
+}
+
+@media only screen and (min-height:800px){
+  .prev, .next,.text, .caption {font-size: 30px}
+ }

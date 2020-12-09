@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <link rel="stylesheet" href="css/index.css">
+    <title>I love Serbia!</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <div w3-include-html="meni.html" id="w3"></div>
+        <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="200" height="200" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=serbia&t=&z=7&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                    scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="<a href="
+                    https://sites.google.com/view/maps-api-v2/mapv2"></a>
+            </div>
+        </div>
+
+        <div class="fotorama" data-width="100%" data-height="auto" data-allowfullscreen="native" data-autoplay="true"
+            data-autoplay="3000" data-stopautoplayontouch="false">
+            <img src="slike/home/pocetna1.jpg">
+            <img src="slike/home/pocetna3.jpg">
+            <img src="slike/home/pocetna4.jpg">
+            <img src="slike/home/pocetna5.jpg">
+            <img src="slike/home/pocetna6.jpg">
+            <img src="slike/home/pocetna7.jpg">
+            <img src="slike/home/pocetna8.jpg">
+            <img src="slike/home/pocetna9.jpg">
+            <img src="slike/home/pocetna2.jpg">
+            <img src="slike/home/pocetna10.jpg">
+            <img src="slike/home/pocetna11.jpg">
+            <img src="slike/home/pocetna12.jpg">
+            <img src="slike/home/nosnja.jpg">
+
+        </div>
+        <div class="naslov"><h1>Rhythm of Serbian Tradition</h1></div>
+        <div class="tekst">
+            <p>Serbia is a country located partly in the Southeast of Europe – on the Balkan Peninsula (75% of the
+                territory), and partly in the Central Europe – in the Pannonian Basin, (25% of its territory), covering
+                a total area of 88,407 km2.
+
+                In the North, Serbia shares borders with Hungary, in the East with Romania and Bulgaria, in the South
+                with Macedonia and Albania, and in the West with Montenegro, Bosnia and Herzegovina and Croatia.
+
+                The Republic of Serbia consists of two autonomous provinces: Vojvodina and Kosovo and Metohija. Since
+                the NATO bombing of the Federal Republic of Yugoslavia (1999), the province Kosovo and Metohija has been
+                under the protection of the United Nations. The institutions of temporary self-government in Kosovo and
+                Metohija, where the Albanians are the ethnic majority, unanimously proclaimed independence on the 17th
+                of February 2008, which remains officially unrecognized by Serbia and the United Nations.
+
+                Serbia’s capital is Belgrade.</p>
+
+        </div>
+        <div id="footer">
+            <div class="accordion">
+                <h4>Click here if you want to receive our newsletter</h4>
+                <div class="newsletter">
+                    <form id="formID" name="myform" onsubmit="return validateform()">
+                        <br>
+                        <span id="success" style="color: black; font-size: medium;"></span> <br>
+                        Newsletter <br> <br>
+                        <label for="IDime">Name</label> <br>
+                        <span id="error-name" style="color: red; font-size: small;"></span> <br>
+                        <input type="text" name="name" id="IDime" placeholder="e.g. Mike Tyson" required> <br><br>
+                        <label for="IDmail">E-mail</label> <br>
+                        <span id="error-mail" style="color: red; font-size: small;"></span> <br>
+                        <input type="text" name="email" id="IDmail" placeholder="e.g. miketyson@gmail.com" required>
+                        <br>
+                        <br>
+                        <input type="submit" name="subscribe" value="Subscribe"> <br><br>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <script src="script/app.js"></script>
+    <script>
+        includeHTML();
+    </script>
+    <script src="script/index.js"></script>
+</body>
+
+</html>
